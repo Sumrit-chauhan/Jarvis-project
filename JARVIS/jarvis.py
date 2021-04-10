@@ -63,8 +63,8 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('sumritchauhan9011@gmail.com', 'bhai sumrit manja')
-    server.sendmail('sumritchauhan9011@gmail.com', to, content)
+    server.login('your email here', 'your password here')
+    server.sendmail('your email here', to, content)
     server.close()
 
 
@@ -113,14 +113,14 @@ if __name__ == "__main__":
             speak(
                 'I am jarvis , i am a personal assistant for your help , and created by sumrit chauhan ')
 
-        elif 'sumrit chauhan' in query:
-            speak('sumit chauhan is my owner and he is a student now , he pursuing his B. Tech from guru gobind singh indraprasth university')
+        elif 'your name' in query:
+            speak('your name is my owner and he is a student now , he pursuing his B. Tech from guru gobind singh indraprasth university')
 
-        elif ' about mohit tiwari' in query:
-            speak("Mohit Tiwari is my owner's friend and he is studying with my owner, he pursuing his B. Tech from guru gobind singh indraprasth university")
+        elif ' about your friend name' in query:
+            speak("your friend name  about your friend")
 
-        elif ' about suraj tripathi' in query:
-            speak("suraj tripathi is my owner's friend and he is studying with my owner, he pursuing his B. Tech from guru gobind singh indraprasth university")
+        elif ' about your friend name' in query:
+            speak("your friend name about your friend")
 
         elif 'meaning of your name' in query:
             speak("Just A Rather Very Intelligent System")
@@ -135,11 +135,11 @@ if __name__ == "__main__":
             except Exception as e:
                 speak("sorry sir! . I am not able to send this email")
 
-        elif ' email to mohit tiwari' in query:
+        elif ' email to name to send email' in query:
             try:
                 speak("what should i say?")
                 content = takeCommand()
-                to = "mohitiwari2002@gmail.com"
+                to = "your friend email"
                 sendEmail(to, content)
                 speak("email has been sent sucessfully!")
             except Exception as e:
@@ -196,7 +196,7 @@ if __name__ == "__main__":
             speak("I have no father SIR, I have been made . By SUMRIT CHAUHAN")
 
         elif 'your birthday' in query:
-            speak("I love my creator so much, that's why I consider his birthday date as my birthday date which is twenty four september two thousand three")
+            speak("I love my creator so much, that's why I consider his birthday date as my birthday date which is your birthday date")
 
         elif 'are you alone' in query:
             speak("I'm not alone because i have you sir")
